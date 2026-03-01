@@ -70,7 +70,7 @@ resource "azurerm_network_security_group" "nsg_sg" {
     protocol                   = "Udp"
     source_port_range          = "*"
     destination_port_range     = "5201"
-    source_address_prefix      = "20.213.57.117/32"
+    source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
 }
